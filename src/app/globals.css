@@ -1,0 +1,52 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-black text-white;
+  }
+  
+  body {
+    @apply font-mono;
+  }
+  
+  /* No rounded corners - sharp edges only */
+  * {
+    border-radius: 0 !important;
+  }
+  
+  /* Caret color */
+  input, textarea {
+    caret-color: white;
+  }
+  
+  /* Selection */
+  ::selection {
+    @apply bg-white text-black;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/20 hover:bg-white/40;
+  }
+}
+
+@layer components {
+  .orkestra-glow {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .orkestra-text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}

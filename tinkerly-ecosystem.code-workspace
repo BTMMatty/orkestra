@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../tink-io-platform"
+		},
+		{
+			"path": "../readmymri"
+		}
+	],
+	"settings": {}
+}
